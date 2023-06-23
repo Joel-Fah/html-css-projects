@@ -48,10 +48,23 @@ h1 {
     line-height: 60pt;
 }
 
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25pt;
+}
+
 section {
     margin: 5% 0;
-    padding: 50px 0;
+    padding: 50px;
     background-color: var(--primary-dark);
+    text-align: center;
+}
+
+section.bg-white {
+    background-color: var(--white);
+    margin: 5% 0;
+    padding: 50px;
     text-align: center;
 }
 
@@ -149,10 +162,7 @@ main {
 }
 
 .about h2 {
-    text-align: center;
     color: var(--white);
-    font-weight: 500;
-    font-size: 25pt;
 }
 
 .about ul {
@@ -172,6 +182,55 @@ main {
     margin-left: -1em;
     font-size: 20pt;
 }
+
+/* Gallery */
+.gallery h2 {
+    color: var(--black);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 320px 320px;
+    gap: 10px;
+  }
+  .grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .box-image {
+    position: relative;
+    transition: all .3s ease;
+  }
+  .box-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all .3s ease;
+  }
+  .box-image:hover .box-hover {
+    display: flex;
+    transition: all .3s ease;
+  }
+  @media screen and (max-width: 996px) {
+    .grid img,
+    .box-hover {
+      min-height: 320px;
+      max-height: 320px;
+    }
+  
+    .gallery {
+      padding: 15px;
+    }
+  }
 
 /* Footer Styles */
 footer {
