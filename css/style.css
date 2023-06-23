@@ -1,0 +1,122 @@
+/* Poppins font */
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+/* CSS variables */
+:root {
+    /* Font */
+    --font: "Poppins";
+
+    /* Colors */
+    /* --primary-light: #8d87b7; */
+    --primary-light: #abaeef;
+    --primary-dark: #1f2039;
+    --white: #ffffff;
+    --black: #1d1d1d;
+}
+
+/* General Styles */
+a {
+    text-decoration: none;
+    color: initial;
+    transition: color .3s ease;
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+a.btn {
+    color: var(--white);
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: larger;
+    background: linear-gradient(to bottom, #4c4764, var(--primary-light));
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-light);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 10px;
+}
+
+/* Header Styles */
+header {
+    grid-column: 1 / -1;
+    padding: 10px 50px 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: var(--primary-dark);
+    font-size: larger;
+}
+
+nav ul > li:first-child {
+    margin-right: auto;
+}
+
+nav img {
+    width: 50%;
+}
+
+/* Main Styles */
+main{
+    grid-column: 1 / -1;
+}
+
+.hero {
+    width: 100%;
+    height: 80%;
+    gap: 15%;
+    background-color: var(--primary-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.hero-text {
+    width: min-content;
+    height: 100%;
+}
+
+.hero-text h1 {
+    font-size: 50pt;
+    font-weight: 500;
+    line-height: 60pt;
+}
+
+.hero-text p {
+    width: calc(100% + 90px);
+    color: var(--white);
+    font-size: larger;
+    margin: auto;
+}
+
+.hero-text p > span {
+    color: var(--primary-light);
+}
+
+.hero .hero-img {
+    width: 30%;
+}
+/* Footer Styles */
+footer{
+    grid-column: 1 / -1;
+}
