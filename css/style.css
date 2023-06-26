@@ -76,6 +76,10 @@ section {
     text-align: center;
 }
 
+section:last-child {
+    margin: initial;
+}
+
 section.bg-white {
     background-color: var(--white);
     margin: 5% 0;
@@ -256,7 +260,9 @@ table {
     border-collapse: collapse;
 }
 
-table, th, td{
+table,
+th,
+td {
     border: 1px solid var(--primary-light);
 }
 
@@ -285,7 +291,7 @@ th {
 
 .contact .contact-content .form-credentials {
     display: flex;
-    gap: 40px;
+    gap: 70px;
     align-items: center;
     justify-content: space-evenly;
     margin: 10px 0;
@@ -296,17 +302,31 @@ th {
     color: var(--white);
     font-size: larger;
     width: 100%;
+    max-width: 100%;
 }
 
-.contact .contact-content .form-credentials .contact-form-field > input, textarea {
-    padding: 15px 10px;
+.contact .contact-content .form-credentials .contact-form-field>input,
+textarea {
+    padding: 20px;
     margin: 5px 0;
     border-radius: 5px;
     border: none;
-    width: 100%;
+    width: calc(100% - 40px);
+
 }
 
 /* Footer Styles */
 footer {
     grid-column: 1 / -1;
+    padding: 10px;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer img {
+    width: 100px;
 }
