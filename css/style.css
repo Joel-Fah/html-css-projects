@@ -37,6 +37,10 @@ a.btn {
     background: linear-gradient(to bottom, #4c4764, var(--primary-light));
 }
 
+p {
+    font-size: larger;
+}
+
 /* h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: var(--primary-light);
@@ -151,7 +155,6 @@ main {
 .hero-text p {
     width: calc(100% + 90px);
     color: var(--white);
-    font-size: larger;
     margin: auto;
 }
 
@@ -248,7 +251,59 @@ main {
 
 /* Prices */
 table {
-    border: 1px solid var(--white);
+    width: 100%;
+    color: var(--white);
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid var(--primary-light);
+}
+
+td {
+    padding: 70px;
+}
+
+th {
+    padding: 20px;
+}
+
+/* Contact */
+.contact h2 {
+    color: var(--primary-light);
+}
+
+.contact .contact-content {
+    display: grid;
+    grid-template: 3 / 2;
+}
+
+.contact .contact-content a.btn {
+    padding: 15px 70px;
+    float: left;
+}
+
+.contact .contact-content .form-credentials {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.contact .contact-content .form-credentials .contact-form-field {
+    text-align: left;
+    color: var(--white);
+    font-size: larger;
+    width: 100%;
+}
+
+.contact .contact-content .form-credentials .contact-form-field > input, textarea {
+    padding: 15px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
 }
 
 /* Footer Styles */
