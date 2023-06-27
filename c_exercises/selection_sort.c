@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int i, j, temp, size, minIndex;
-    float array[100];
+    int i, j, size, minIndex;
+    float temp, array[100];
 
     //  Get array size and elements
     printf("Enter the size of your array: >>> ");
