@@ -20,7 +20,7 @@ int main() {
 
     // Print result
     if(isPalindrome == 1) {
-        printf("\n%s is a palindrome\n\n", word);
+        printf("\n'%s' is a palindrome\n\n", word);
     } else {
         printf("\n'%s' is not a palindrome\n\n", word);
     }

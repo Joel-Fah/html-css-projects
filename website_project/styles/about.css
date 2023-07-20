@@ -1,0 +1,64 @@
+.about-main {
+    margin: auto;
+}
+
+.about-main h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.content-box {
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.about-main h1 {
+    text-align: center;
+}
+
+.content-box ul {
+    margin-top: 30px;
+}
+
+.content-box+div {
+    text-align: center;
+}
+
+/* Pricing */
+
+.pricing h2 {
+    margin-bottom: 30px;
+}
+
+.pricing table {
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing td,
+.pricing th {
+    padding: 15px;
+    border: 1px solid #a5b4fc;
+}
+
+.pricing td {
+    padding: 80px;
+}
+
+@media screen and (max-width: 996px) {  
+    .content-box {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .pricing {
+        display: none;
+    }
+}

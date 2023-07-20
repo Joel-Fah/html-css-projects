@@ -1,0 +1,142 @@
+.home-introduction {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    gap: 80px;
+}
+
+.home-introduction .intro-text {
+    margin: auto;
+}
+
+.home-introduction h1 {
+    margin: 15px auto;
+}
+
+.home-introduction p {
+    margin-bottom: 50px;
+}
+
+/* Home Images */
+
+.home-images {
+    background-color: white;
+}
+
+.home-images h2 {
+    color: #242424;
+    text-align: center;
+    margin: 10px auto 30px;
+}
+
+.home-images .home-image-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.home-images .home-image-groups .image-group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Contact */
+
+.section-contact h2 {
+    color: #a5b4fc;
+    text-align: center;
+}
+
+.section-contact form {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.section-contact .form-name-email {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.section-contact .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.section-contact .form-group label {
+    color: white;
+}
+
+.section-contact .form-name-email .form-group input {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.section-contact .message {
+    width: 100%;
+}
+
+.section-contact textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.section-contact .cta-btn {
+    width: auto;
+    margin: 20px 0;
+}
+
+.section-contact .cta-btn>.cta {
+    padding: 20px 70px;
+}
+
+@media screen and (max-width: 996px) {
+    .home-introduction {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-introduction .intro-image img {
+        width: 100%;
+    }
+
+    .home-introduction p {
+        margin-bottom: 30px;
+    }
+
+    .home-images .home-image-groups .image-group {
+        flex-direction: column;
+    }
+
+    .section-contact h2 {
+        margin: 20px 0;
+    }
+
+    .section-contact .form-name-email {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-contact .cta-btn>.cta {
+        padding: 15px 50px;
+    }
+}
