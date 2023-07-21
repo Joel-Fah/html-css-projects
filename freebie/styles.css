@@ -122,7 +122,8 @@ nav .nav-dropdown {
     gap: 5px;
 }
 
-section {
+section,
+footer {
     padding: 110px;
 }
 
@@ -190,4 +191,39 @@ section {
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+/* Footer */
+.footer-content {
+    padding: 80px;
+    border-radius: 100px;
+}
+
+.footer-content .footer-content__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content .cta-light {
+    white-space: nowrap;
+}
+
+footer hr {
+    margin: 50px auto;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: none;
+}
+
+footer .copyrights {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .copyrights a {
+    color: unset;
+    text-decoration: underline;
 }
