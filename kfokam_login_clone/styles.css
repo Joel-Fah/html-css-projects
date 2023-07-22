@@ -361,7 +361,7 @@ li {
   }
 
   .image-container {
-    grid-column: 1 / span 12;
+    grid-column: 1;
     grid-row: 1;
     height: 100vh;
   }
