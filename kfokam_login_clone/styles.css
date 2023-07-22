@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #0070a8;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    height: 100%;
+    align-items: center;
+}
+
+.form-container {
+    grid-column: 1 / span 6;
+    width: auto;    
+}
+
+.form-container .form__content {
+    width: 40%;
+    margin: auto;
+    padding: 20px 40px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.form__content .logo {
+    width: 100%;
+    text-align: center;
+}
+
+.form__content img {
+    width: 80%;
+    mix-blend-mode: multiply;
+}
+
+.form__content .inputs {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__content .inputs input {
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    -webkit-box-shadow: 0 0 5px #86c1f5 inset;
+    box-shadow: 0 0 5px #86c1f5 inset;
+    border: 1px solid #86c1f5 inset;
+}
+
+.form__content .inputs input.submit {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #1177d1;;
+    background-color: #1177d1;
+    color: white;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in;
+}
+
+.form__content .inputs input.submit:hover {
+    background-color: #0a4981;
+}
+
+.form__content .inputs .submit-button a {
+    font-size: 12pt;
+}
+
+.form__content p {
+    font-size: 11pt;
+}
+
+.image-container {
+    grid-column: 7 / span 12;
+    height: 100vh;
+    background-color: red;
+}
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    perspective: 100px;
+    height: 103vh;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel__viewport::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .carousel__viewport::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .carousel__viewport::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100vh;
+    counter-increment: item;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .carousel__slide:first-child {
+    background-image: url(./img/slide1.jpg);
+    background-position: center right;
+  }
+
+  .carousel__slide:nth-child(2) {
+    background-image: url(./img/slide2.jpg);
+  }
+
+  .carousel__slide:last-child {
+    background-image: url(./img/slide3.jpg);
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin: 50% 0;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    opacity: 0.5;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='12'%3E%3Cpath d='M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z' fill='rgba(255,255,255,1)'%3E%3C/path%3E%3C/svg%3E");
+  }
+  
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='12'%3E%3Cpath d='M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z' fill='rgba(255,255,255,1)'%3E%3C/path%3E%3C/svg%3E");
+  }
