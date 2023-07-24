@@ -1,0 +1,186 @@
+/* Variables */
+:root {
+    /* Colors */
+    --primary-dark: #462878;
+    --primary-light: #7F45E2;
+    --bg-dark: #807ECE;
+    --bg-light: #8E7ECE;
+    --dark: #2D2A37;
+    --dimmed: #6B6B6B;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-light) 100%);
+}
+
+.error-message {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--dark);
+    font-weight: 500;
+    display: none;
+}
+
+.calculator-container {
+    background-color: var(--dark);
+    color: white;
+    padding: 54px 32px 32px;
+    border-radius: 48px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    box-shadow:
+        0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
+        0px 6px 8px 0px rgba(255, 255, 255, 0.10) inset,
+        0px 8px 17px 0px rgba(0, 0, 0, 0.29),
+        0px 30px 30px 0px rgba(0, 0, 0, 0.26),
+        0px 68px 41px 0px rgba(0, 0, 0, 0.15),
+        0px 120px 48px 0px rgba(0, 0, 0, 0.04),
+        0px 188px 52px 0px rgba(0, 0, 0, 0.01),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Top Part */
+.calculator-container .top {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    width: 85%;
+}
+
+/* History */
+.calculator-container .history p {
+    color: var(--dimmed);
+    font-size: 20px;
+}
+
+/* Result */
+.calculator-container .result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.calculator-container .result svg {
+    width: 20px;
+    height: 20px;
+}
+
+.calculator-container .result h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    gap: 12px;
+}
+
+.buttons .button__item {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+    box-shadow:
+        0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset,
+        0px 0px 2px 0px rgba(0, 0, 0, 0.29),
+        0px 2px 4px 0px rgba(0, 0, 0, 0.26),
+        0px 4px 6px 0px rgba(0, 0, 0, 0.10),
+        0px 7px 7px 0px rgba(0, 0, 0, 0.04),
+        0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+}
+
+.buttons .button__item .button-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #22222225;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+.buttons .button__item:hover .button-overlay {
+    display: block;
+}
+
+.buttons .button__item span {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+}
+
+.buttons .button__item:first-child span {
+    color: var(--primary-light);
+}
+
+.buttons .button__item svg {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .button__item.operator {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+}
+
+.buttons .button__item.operator:last-child {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+}
+
+@media only screen and (max-width: 320px) {
+    .calculator-container {
+        display: none;
+    }
+
+    .error-message {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .calculator-container {
+        padding: 54px 20px 32px;
+    }
+    .buttons .button__item span {
+        font-size: 20px;
+    }
+
+    .buttons .button__item svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
