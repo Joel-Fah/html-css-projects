@@ -119,6 +119,7 @@ form .form-input input:focus ~ .focus-indicator {
 
 form .form-check {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: space-between;
 }
