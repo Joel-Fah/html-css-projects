@@ -1,0 +1,52 @@
+:root {
+    /* Colors */
+    --light: #F2F5F9;
+    --dark: #0B0909;
+    --primary: #FF9C1A;
+    --secondary: #EC1B09;
+    --gradient: linear-gradient(127deg, var(--primary) 0%, var(--secondary) 100%);
+    --bg-color: #EBF2FA;
+
+    /* Fonts */
+    --brand: 'Pacifico', cursive;
+    --heading: 'Poppins', sans-serif;
+    --body: 'Raleway', sans-serif;
+}
+
+.content__about-contact {
+    grid-column: 4 / span 9;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.content__about-contact .about-heading__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content__about-contact .about-heading__title h2 {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content__about-contact .about-heading__title h2 {
+    font-size: 40px;
+}
+
+
+.content__about-contact .about-heading__title hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+    background: var(--gradient);
+    border: none;
+}
