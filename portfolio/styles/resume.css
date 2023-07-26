@@ -1,0 +1,148 @@
+:root {
+    /* Colors */
+    --light: #F2F5F9;
+    --dark: #0B0909;
+    --primary: #FF9C1A;
+    --secondary: #EC1B09;
+    --gradient: linear-gradient(127deg, var(--primary) 0%, var(--secondary) 100%);
+    --bg-color: #EBF2FA;
+
+    /* Fonts */
+    --brand: 'Pacifico', cursive;
+    --heading: 'Poppins', sans-serif;
+    --body: 'Raleway', sans-serif;
+}
+
+.content__about-resume {
+    grid-column: 4 / span 9;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.content__about-resume .about-heading__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content__about-resume .about-heading__title h2, 
+.content__about-resume .about-description h3{
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content__about-resume .about-heading__title h2 {
+    font-size: 40px;
+}
+
+
+.content__about-resume .about-heading__title hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+    background: var(--gradient);
+    border: none;
+}
+
+.academic-course {
+    display: grid;
+    grid-template: auto 1fr / repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.academic-course .course__title {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.academic-course .course__title:first-child {
+    grid-column: 1 / span 2;
+}
+
+.academic-course .course__title:last-child {
+    grid-column: 3 / span 2;
+}
+
+.academic-course .course__title i {
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.academic-course .course__content {
+    grid-row: 2;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--light);
+}
+
+.academic-course .course__content.current {
+    background-color: #FFE3BF;
+}
+
+.academic-course .course__content p {
+    text-align: left;
+}
+
+.academic-course .course__content span {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    font-size: larger;
+}
+
+.resume-skills {
+    display: flex;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 30px;
+    gap: 20px;
+    width: 100%;
+}
+
+.resume-skills .skills__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resume-skills .skill__item {
+    background-color: #d5dbe2;
+    padding: 15px;
+    border-radius: 10px;
+    /* width: fit-content; */
+}
+
+.resume-skills .skill__item span {
+    font-weight: 500;
+}
+
+.resume-skills .resume__soft,
+.resume-skills .resume__work {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: inherit;
+}
+
+.resume-skills .resume__soft .soft-skills,
+.resume-skills .resume__work .work-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    white-space: nowrap;
+} 
