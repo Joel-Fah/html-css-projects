@@ -1,0 +1,256 @@
+/* Variables */
+:root {
+    /* Colors */
+    --light: #DEDEDE;
+    --light-trans: rgba(222, 222, 222, 0.6);
+    --dark: #202020;
+    --opacity: 0.6;
+
+    /* Font */
+    --font: 'Manrope', sans-serif;
+
+    /* Transition */
+    --transition: all 300ms ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    font-family: var(--font);
+    color: var(--light);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.link {
+    padding: 10px 5px;
+    border-bottom: 2px solid var(--light-trans);
+    color: var(--light-trans);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+section.with-padding {
+    padding: 96px;
+}
+
+section .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+section .section-header .header__subheading {
+    color: var(--light-trans);
+    font-size: 16px;
+    
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section .section-header .header__heading {
+    color: var(--light);
+    font-size: 32px;
+    
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.h50 {
+    height: 50px;
+}
+
+.h100 {
+    height: 100px;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.70);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .brand {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .brand img {
+    width: inherit;
+}
+
+.navbar .brand span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar .navbar-links .nav__link-toggle {
+    display: none;
+}
+
+.navbar .navbar-links .nav__link {
+    font-size: 18px;
+    padding: 0 5px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.navbar .navbar-links .nav__link .link-indicator {
+    position: absolute;
+    background-color: var(--light);
+    bottom: -15px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.navbar .navbar-links .nav__link:hover {
+    color: white;
+}
+
+.navbar .navbar-links .nav__link:hover .link-indicator {
+    left: 0;
+    width: 100%;
+}
+
+/* Hero */
+.hero-image {
+    background-image: url(./images/img1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-image .hero-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--dark);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid var(--light);
+    font-weight: 600;
+}
+
+/* Coworking */
+.coworking {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.coworking .members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+}
+
+.coworking .members .members__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.coworking .members .members__item .sub-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--light-trans);
+    letter-spacing: 1.5px;
+}
+
+.coworking .members .members__item .title {
+    font-size: 20px;
+    color: var(--light);
+    letter-spacing: -0.5px;
+    line-height: 30px;
+}
+
+/* Large image */
+.lg-image {
+    width: 100%;
+}
+
+.lg-image img {
+    width: inherit;
+    height: 500px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 425px) {
+    section.with-padding {
+        padding: 20px;
+    }
+
+    .navbar .navbar-links .nav__link {
+        display: none;
+    }
+
+    .navbar .navbar-links .nav__link-toggle {
+        display: block;
+    }
+
+    .hero-image .hero-text {
+        bottom: 20px;
+        right: 20px;
+        font-size: small;
+    }
+
+    .hero-image .hero-text svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .coworking .members {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        row-gap: 80px;
+    }
+}
