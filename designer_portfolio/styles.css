@@ -305,7 +305,7 @@ footer .social-links a:hover {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
     section.with-padding {
         padding: 20px;
     }
