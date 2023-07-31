@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist</title>
+
+    <!-- Font ~ Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Icons -->
+</head>
+
+<body>
+    <!-- ========== Start Header ========== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>C</span>
+            </div>
+
+            <div class="nav-items">
+                <a href="" class="nav-link active">
+                    Home
+                    <div class="link-indicator"></div>
+                </a>
+                <a href="" class="nav-link">
+                    Services
+                    <div class="link-indicator"></div>
+                </a>
+                <a href="" class="nav-link">
+                    Menu
+                    <div class="link-indicator"></div>
+                </a>
+                <a href="" class="nav-link">
+                    Contact
+                    <div class="link-indicator"></div>
+                </a>
+            </div>
+
+            <!-- Rounded switch -->
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== End Header ========== -->
+
+    <!-- ========== Start Hero ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1 class="section-title">Make card<br>visually pleasing</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas amet felis fermentum pharetra. Ut
+                neque
+                quam ipsum porttitor nunc, lectus vel diam tincidunt. Est vulputate sed justo, vulputate.
+            </p>
+            <p class="question">
+                How can I design better cards?
+            </p>
+            <div class="actions">
+                <a href="" class="btn-primary">Best practices</a>
+                <a href="" class="btn-outline">Free trial now</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="196" height="187" viewBox="0 0 196 187" fill="none">
+                <path d="M189.5 7.11254C174.502 6.51151 160.223 8.36929 145.522 11.4556C58.0878 29.8117 -86.2415 101.104 89.7946 96.8136C156.108 95.1972 198.429 88.4438 105.825 116.357C99.2565 118.337 92.5597 120.248 86.3117 123.123C84.2423 124.075 80.3581 125.678 79.3877 128.092C75.0495 138.885 114.022 140.545 119.379 140.787C122.232 140.916 125.048 140.912 123.156 140.912C29.0362 140.912 72.3778 112.856 130.415 144.88C148.035 154.601 176.473 160.275 184.968 180" stroke="#B75D69" stroke-width="13" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="hero-cards">
+            <!-- Card 1 -->
+            <div id="card-1">
+                <div class="card-img">
+                    <img src="https://s3-alpha-sig.figma.com/img/1abf/88e1/fbe997ec7835ba460b3ac2353c26d84f?Expires=1691366400&Signature=itop~1OHZW8VpPoDmfwJ3dHMa-SrkpWfVBqH3JOBQitUSKSvxcXMtly35m3V~zdmKNd2P4lSY-oHK-F~EkyLgnDIGEvZfnJ5WTA67Wt9nPa5CfjWjLVAw1E6aymBfJLUkKcu4Vt9hN77rBHrBDaw0nvUf~Wfgb2t~fL98fABkZr2pMQUt~Uut9VEioetnNnYDHIiQFzDrBklNU5EfXZ6mXqZshDyncuz5cLz6yXd~WcOGAvUo~VBtt5~BA1AcUmnY79GVBDeqA1fN1T5fJkIh6x4pRs57Xjxw1i6uBNbEGb027fodT9nwrV1DTldR1UUbZR~pVX4S8ca~4G4CorPIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="Card 1 image">
+                </div>
+                <div class="card-content">
+                    <h2>Gladys</h2>
+                    <p>
+                        Minim dolor in amet nulla laboris enim dolore consequat...
+                    </p>
+                    <a href="" class="card-link">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div id="card-2">
+                <h2>Web design <br>trends</h2>
+                <p>
+                    16 January 2017
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="card-3">
+                <div class="top">
+                    <h2>Vector</h2>
+                    <img src="https://s3-alpha-sig.figma.com/img/fef4/4277/31593c84940d4be9ecb0084ddb3d933d?Expires=1691971200&Signature=S1A24GGJIhvwkZR-ve667fT6W9sEIzzSi-bYtxbMgH886-oAUHhVUUrWhATKMpNkh9c4GObfBSEA~IwavEzGm9-bTQxX1lU773-RNKKgn0vAlmr5qy2GkiGAiJStND0kCcJ10RM7qnQE6H4Eh1M9fqYTtDaLrzpvIUkPL~~6gpAQMrZF2pejciUjF5upexVEmQx1u53VOXZnIzWQ9XEv-9Fd-lwlmdAO2qPTQp8DP3sE6FKfhsbl6qJo9IPP5udISIZ8vEueEssp742O3tx37qumy1oWBvC9kcMYtdp6EsTXUZAmd144Oiy-rvH3eJIY90Si6guxppwoa-WwfKhu8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="...">
+                </div>
+                <div class="bottom">
+                    <span>$1.99</span>
+                    <a href="">Buy now</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div id="card-4">
+                <div class="images">
+                    <img src="https://s3-alpha-sig.figma.com/img/d31d/4de5/32e911e9f0b0ff79d47f272ad7bc82ce?Expires=1691971200&Signature=LS8Yi8F~hWY2t7u9SHmr5TaaHYxGFKI9ro1ovZtDJnDfhJjVTde~2rASWdCWFqsc0qN7HQ-nMAqJyaBEDhvvywbDnloiVL1kP2vXshsqU77-ypkDJN3X1MhDqvyL6dMWO9p-AuW1lERgBQwE~IoMlHWfmQJWZxdBWat6cOcsHZrwU8nn61BlW7l18TNvKAqGvhy734gOJ0J6~jqlVThj95mHCK2zen3HcQ25qvnqahY3MAudbqPhVQAhfM2nXuI8D1ihD2cJI~wcur-M76EVwLHcuNIjMdWA6aGbCeiHZKRdRJwOKEcMkjur1xaL5AMuCP1kmvxTSdXiFUWpl8CpRg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="Prfile picture">
+                </div>
+                <div class="text">
+                    <div class="text-title">
+                        <h2>Ralph Edwards</h2>
+                        <span>Dog trainer</span>
+                    </div>
+                    <p>
+                        Minim dolor in amet nulla laboris enim dolore consequ
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div id="card-5">
+                <img src="https://s3-alpha-sig.figma.com/img/c089/081d/a8a063fc55ec42171caab423215c02fd?Expires=1691971200&Signature=DQJzOGJWjFVzeforVYZarFPWzCWAd0yqU3sI-g0luxK7Eyg0UjxeFm~4YgyMpVsvJMeymPBd-SMflpYINi8Ileoeb0UHJRtmKP13kk96zYKgCjnPUyJ~FJqKFfaKuIRhkwj6O9UWzu46hUbqHL-bsAe44E-XuWYZrCw4wt9Zi1-LVnR~L2J3~-4YgJiagWolIMWF0qoGYd-tuz9DtJTYSnVj78sV9bDfC5C20aYS98nsYenGWCTvz9pZgkyycImSraQy4nA47glUJS4Q5e~Mt~oj8WRUWTGsMJXi1DWKvdu~y6HobkZu7YDHIaoz4CMTbW7UBK8EQKKnoWX3S6DPdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="profile">
+                    <h2>Bessie Cooper</h2>
+                    <span>Web Designer</span>
+                    <p>
+                        Minim dolor in amet nulla laboris enim dolore.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Hero ========== -->
+</body>
+
+</html>

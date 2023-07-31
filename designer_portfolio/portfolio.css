@@ -237,6 +237,7 @@ a.link:hover svg path {
 
 .featured .featured-row .img-container {
     position: relative;
+    width: 100%;
 }
 
 .featured .featured-row .img-container .hover-text {
