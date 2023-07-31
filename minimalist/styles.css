@@ -51,8 +51,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* max-width: 1000px;
-    margin: auto; */
 }
 
 .navbar .logo {
@@ -282,7 +280,6 @@ input:checked+.slider:before {
 .hero-cards #card-4,
 .hero-cards #card-5 {
     width: 275px;
-    /* height: fit-content; */
     border-radius: 20px;
 }
 
@@ -424,7 +421,7 @@ input:checked+.slider:before {
 .hero #card-4 .images img {
     position: absolute;
     bottom: -35px;
-    left: 32% ;
+    left: 32%;
     width: 90px;
     height: 90px;
     object-fit: cover;
@@ -599,7 +596,7 @@ input:checked+.slider:before {
     border-radius: 20px 20px 0 0;
     background-color: var(--dark);
     position: inherit;
-    bottom: .5px;
+    bottom: 0px;
     left: 5%;
 }
 
@@ -675,6 +672,189 @@ footer .footer-socials a:hover {
     color: var(--active);
 }
 
+/* Mobile Screens ~ S, Xs */
+@media only screen and (max-width: 996px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px;
+        width: 100%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .navbar .nav-items {
+        gap: 10px;
+    }
+
+    .nav-items .nav-link {
+        font-size: 10px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero .hero-text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero .hero-text p.question {
+        font-size: 16px;
+    }
+
+    .hero .hero-text .actions {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .hero .hero-text svg {
+        display: none;
+    }
+
+    .hero .hero-cards {
+        gap: 10px;
+    }
+
+    .hero-cards #card-1,
+    .hero-cards #card-2,
+    .hero-cards #card-3,
+    .hero-cards #card-4,
+    .hero-cards #card-5 {
+        width: 190px;
+        border-radius: 10px;
+        /* height: fit-content; */
+    }
+
+    .hero .hero-cards #card-1 .card-img {
+        height: 160px;
+    }
+
+    .hero .hero-cards #card-1 img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .hero .hero-cards #card-1 .card-content {
+        padding: 15px;
+    }
+
+    .hero .hero-cards #card-1 .card-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-cards #card-2 {
+        padding: 20px;
+    }
+        
+    .hero-cards #card-2 h2 {
+        font-size: 25px;
+    }
+
+    .hero-cards #card-3 {
+        height: fit-content;
+    }
+
+    .hero-cards #card-3 .top {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .hero-cards #card-3 h2 {
+        font-size: 20px;
+    }
+
+    .hero-cards #card-3 img {
+        height: 150px;
+    }
+
+    .hero-cards #card-3 .bottom {
+        padding: 10px;
+    }
+
+    .hero-cards #card-3 .bottom a {
+        padding: 10px;
+    }
+
+    .hero #card-4 .images {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .hero #card-4 .images img {
+        left: 25%;
+    }
+
+    .hero-cards #card-5 {
+        gap: 10px;
+        padding: 15px;
+        height: fit-content;
+    }
+
+    .text-section {
+        height: 50vh;
+    }
+
+    .text-section .container {
+        margin: unset;
+        margin-top: auto;
+    }
+
+    .text-section h2 {
+        font-size: 30px;
+    }
+
+    .phone-case {
+        display: none;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text .line {
+        right: 30px;
+        transform: rotate(180deg);
+    }
+
+    .about-text h3 {
+        font-size: 32px;
+        font-weight: 900;
+    }
+    
+    .about-text .text-bloc:last-child h3 {
+        font-size: 26px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    footer {
+        gap: 15px;
+    }
+
+    footer h4 {
+        font-size: initial;
+    }   
+    
+    footer small {
+        color: #78858F;
+        font-size: 12px;
+    }
+}
+
+/* Large Screens ~ XXL */
 @media only screen and (min-width: 1025px) {
     nav, .container {
         max-width: 1200px;
