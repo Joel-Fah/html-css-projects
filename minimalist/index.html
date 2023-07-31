@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalist</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
     <!-- Font ~ Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +18,7 @@
     <link rel="stylesheet" href="./styles.css">
 
     <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,94 +61,206 @@
 
     <!-- ========== Start Hero ========== -->
     <section id="hero" class="hero">
-        <div class="hero-text">
-            <h1 class="section-title">Make card<br>visually pleasing</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas amet felis fermentum pharetra. Ut
-                neque
-                quam ipsum porttitor nunc, lectus vel diam tincidunt. Est vulputate sed justo, vulputate.
-            </p>
-            <p class="question">
-                How can I design better cards?
-            </p>
-            <div class="actions">
-                <a href="" class="btn-primary">Best practices</a>
-                <a href="" class="btn-outline">Free trial now</a>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="196" height="187" viewBox="0 0 196 187" fill="none">
-                <path d="M189.5 7.11254C174.502 6.51151 160.223 8.36929 145.522 11.4556C58.0878 29.8117 -86.2415 101.104 89.7946 96.8136C156.108 95.1972 198.429 88.4438 105.825 116.357C99.2565 118.337 92.5597 120.248 86.3117 123.123C84.2423 124.075 80.3581 125.678 79.3877 128.092C75.0495 138.885 114.022 140.545 119.379 140.787C122.232 140.916 125.048 140.912 123.156 140.912C29.0362 140.912 72.3778 112.856 130.415 144.88C148.035 154.601 176.473 160.275 184.968 180" stroke="#B75D69" stroke-width="13" stroke-linecap="round"/>
-            </svg>
-        </div>
-
-        <div class="hero-cards">
-            <!-- Card 1 -->
-            <div id="card-1">
-                <div class="card-img">
-                    <img src="https://s3-alpha-sig.figma.com/img/1abf/88e1/fbe997ec7835ba460b3ac2353c26d84f?Expires=1691366400&Signature=itop~1OHZW8VpPoDmfwJ3dHMa-SrkpWfVBqH3JOBQitUSKSvxcXMtly35m3V~zdmKNd2P4lSY-oHK-F~EkyLgnDIGEvZfnJ5WTA67Wt9nPa5CfjWjLVAw1E6aymBfJLUkKcu4Vt9hN77rBHrBDaw0nvUf~Wfgb2t~fL98fABkZr2pMQUt~Uut9VEioetnNnYDHIiQFzDrBklNU5EfXZ6mXqZshDyncuz5cLz6yXd~WcOGAvUo~VBtt5~BA1AcUmnY79GVBDeqA1fN1T5fJkIh6x4pRs57Xjxw1i6uBNbEGb027fodT9nwrV1DTldR1UUbZR~pVX4S8ca~4G4CorPIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="Card 1 image">
-                </div>
-                <div class="card-content">
-                    <h2>Gladys</h2>
-                    <p>
-                        Minim dolor in amet nulla laboris enim dolore consequat...
-                    </p>
-                    <a href="" class="card-link">
-                        Read more
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div id="card-2">
-                <h2>Web design <br>trends</h2>
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="section-title">Make card<br>visually pleasing</h1>
                 <p>
-                    16 January 2017
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas amet felis fermentum pharetra. Ut
+                    neque
+                    quam ipsum porttitor nunc, lectus vel diam tincidunt. Est vulputate sed justo, vulputate.
                 </p>
+                <p class="question">
+                    How can I design better cards?
+                </p>
+                <div class="actions">
+                    <a href="" class="btn-primary">Best practices</a>
+                    <a href="" class="btn-outline">Free trial now</a>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="196" height="187" viewBox="0 0 196 187" fill="none">
+                    <path
+                        d="M189.5 7.11254C174.502 6.51151 160.223 8.36929 145.522 11.4556C58.0878 29.8117 -86.2415 101.104 89.7946 96.8136C156.108 95.1972 198.429 88.4438 105.825 116.357C99.2565 118.337 92.5597 120.248 86.3117 123.123C84.2423 124.075 80.3581 125.678 79.3877 128.092C75.0495 138.885 114.022 140.545 119.379 140.787C122.232 140.916 125.048 140.912 123.156 140.912C29.0362 140.912 72.3778 112.856 130.415 144.88C148.035 154.601 176.473 160.275 184.968 180"
+                        stroke="#B75D69" stroke-width="13" stroke-linecap="round" />
+                </svg>
             </div>
 
-            <!-- Card 3 -->
-            <div id="card-3">
-                <div class="top">
-                    <h2>Vector</h2>
-                    <img src="https://s3-alpha-sig.figma.com/img/fef4/4277/31593c84940d4be9ecb0084ddb3d933d?Expires=1691971200&Signature=S1A24GGJIhvwkZR-ve667fT6W9sEIzzSi-bYtxbMgH886-oAUHhVUUrWhATKMpNkh9c4GObfBSEA~IwavEzGm9-bTQxX1lU773-RNKKgn0vAlmr5qy2GkiGAiJStND0kCcJ10RM7qnQE6H4Eh1M9fqYTtDaLrzpvIUkPL~~6gpAQMrZF2pejciUjF5upexVEmQx1u53VOXZnIzWQ9XEv-9Fd-lwlmdAO2qPTQp8DP3sE6FKfhsbl6qJo9IPP5udISIZ8vEueEssp742O3tx37qumy1oWBvC9kcMYtdp6EsTXUZAmd144Oiy-rvH3eJIY90Si6guxppwoa-WwfKhu8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="...">
-                </div>
-                <div class="bottom">
-                    <span>$1.99</span>
-                    <a href="">Buy now</a>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div id="card-4">
-                <div class="images">
-                    <img src="https://s3-alpha-sig.figma.com/img/d31d/4de5/32e911e9f0b0ff79d47f272ad7bc82ce?Expires=1691971200&Signature=LS8Yi8F~hWY2t7u9SHmr5TaaHYxGFKI9ro1ovZtDJnDfhJjVTde~2rASWdCWFqsc0qN7HQ-nMAqJyaBEDhvvywbDnloiVL1kP2vXshsqU77-ypkDJN3X1MhDqvyL6dMWO9p-AuW1lERgBQwE~IoMlHWfmQJWZxdBWat6cOcsHZrwU8nn61BlW7l18TNvKAqGvhy734gOJ0J6~jqlVThj95mHCK2zen3HcQ25qvnqahY3MAudbqPhVQAhfM2nXuI8D1ihD2cJI~wcur-M76EVwLHcuNIjMdWA6aGbCeiHZKRdRJwOKEcMkjur1xaL5AMuCP1kmvxTSdXiFUWpl8CpRg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="Prfile picture">
-                </div>
-                <div class="text">
-                    <div class="text-title">
-                        <h2>Ralph Edwards</h2>
-                        <span>Dog trainer</span>
+            <div class="hero-cards">
+                <!-- Card 1 -->
+                <div id="card-1">
+                    <div class="card-img">
+                        <img src="https://s3-alpha-sig.figma.com/img/1abf/88e1/fbe997ec7835ba460b3ac2353c26d84f?Expires=1691366400&Signature=itop~1OHZW8VpPoDmfwJ3dHMa-SrkpWfVBqH3JOBQitUSKSvxcXMtly35m3V~zdmKNd2P4lSY-oHK-F~EkyLgnDIGEvZfnJ5WTA67Wt9nPa5CfjWjLVAw1E6aymBfJLUkKcu4Vt9hN77rBHrBDaw0nvUf~Wfgb2t~fL98fABkZr2pMQUt~Uut9VEioetnNnYDHIiQFzDrBklNU5EfXZ6mXqZshDyncuz5cLz6yXd~WcOGAvUo~VBtt5~BA1AcUmnY79GVBDeqA1fN1T5fJkIh6x4pRs57Xjxw1i6uBNbEGb027fodT9nwrV1DTldR1UUbZR~pVX4S8ca~4G4CorPIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            alt="Card 1 image">
                     </div>
+                    <div class="card-content">
+                        <h2>Gladys</h2>
+                        <p>
+                            Minim dolor in amet nulla laboris enim dolore consequat...
+                        </p>
+                        <a href="" class="card-link">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="card-2">
+                    <h2>Web design <br>trends</h2>
                     <p>
-                        Minim dolor in amet nulla laboris enim dolore consequ
+                        16 January 2017
                     </p>
                 </div>
-            </div>
 
-            <!-- Card 5 -->
-            <div id="card-5">
-                <img src="https://s3-alpha-sig.figma.com/img/c089/081d/a8a063fc55ec42171caab423215c02fd?Expires=1691971200&Signature=DQJzOGJWjFVzeforVYZarFPWzCWAd0yqU3sI-g0luxK7Eyg0UjxeFm~4YgyMpVsvJMeymPBd-SMflpYINi8Ileoeb0UHJRtmKP13kk96zYKgCjnPUyJ~FJqKFfaKuIRhkwj6O9UWzu46hUbqHL-bsAe44E-XuWYZrCw4wt9Zi1-LVnR~L2J3~-4YgJiagWolIMWF0qoGYd-tuz9DtJTYSnVj78sV9bDfC5C20aYS98nsYenGWCTvz9pZgkyycImSraQy4nA47glUJS4Q5e~Mt~oj8WRUWTGsMJXi1DWKvdu~y6HobkZu7YDHIaoz4CMTbW7UBK8EQKKnoWX3S6DPdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt="profile">
+                <!-- Card 3 -->
+                <div id="card-3">
+                    <div class="top">
+                        <h2>Vector</h2>
+                        <img src="https://s3-alpha-sig.figma.com/img/fef4/4277/31593c84940d4be9ecb0084ddb3d933d?Expires=1691971200&Signature=S1A24GGJIhvwkZR-ve667fT6W9sEIzzSi-bYtxbMgH886-oAUHhVUUrWhATKMpNkh9c4GObfBSEA~IwavEzGm9-bTQxX1lU773-RNKKgn0vAlmr5qy2GkiGAiJStND0kCcJ10RM7qnQE6H4Eh1M9fqYTtDaLrzpvIUkPL~~6gpAQMrZF2pejciUjF5upexVEmQx1u53VOXZnIzWQ9XEv-9Fd-lwlmdAO2qPTQp8DP3sE6FKfhsbl6qJo9IPP5udISIZ8vEueEssp742O3tx37qumy1oWBvC9kcMYtdp6EsTXUZAmd144Oiy-rvH3eJIY90Si6guxppwoa-WwfKhu8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            alt="...">
+                    </div>
+                    <div class="bottom">
+                        <span>$1.99</span>
+                        <a href="">Buy now</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div id="card-4">
+                    <div class="images">
+                        <img src="https://s3-alpha-sig.figma.com/img/d31d/4de5/32e911e9f0b0ff79d47f272ad7bc82ce?Expires=1691971200&Signature=LS8Yi8F~hWY2t7u9SHmr5TaaHYxGFKI9ro1ovZtDJnDfhJjVTde~2rASWdCWFqsc0qN7HQ-nMAqJyaBEDhvvywbDnloiVL1kP2vXshsqU77-ypkDJN3X1MhDqvyL6dMWO9p-AuW1lERgBQwE~IoMlHWfmQJWZxdBWat6cOcsHZrwU8nn61BlW7l18TNvKAqGvhy734gOJ0J6~jqlVThj95mHCK2zen3HcQ25qvnqahY3MAudbqPhVQAhfM2nXuI8D1ihD2cJI~wcur-M76EVwLHcuNIjMdWA6aGbCeiHZKRdRJwOKEcMkjur1xaL5AMuCP1kmvxTSdXiFUWpl8CpRg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            alt="Prfile picture">
+                    </div>
+                    <div class="text">
+                        <div class="text-title">
+                            <h2>Ralph Edwards</h2>
+                            <span>Dog trainer</span>
+                        </div>
+                        <p>
+                            Minim dolor in amet nulla laboris enim dolore consequ
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div id="card-5">
+                    <img src="https://s3-alpha-sig.figma.com/img/c089/081d/a8a063fc55ec42171caab423215c02fd?Expires=1691971200&Signature=DQJzOGJWjFVzeforVYZarFPWzCWAd0yqU3sI-g0luxK7Eyg0UjxeFm~4YgyMpVsvJMeymPBd-SMflpYINi8Ileoeb0UHJRtmKP13kk96zYKgCjnPUyJ~FJqKFfaKuIRhkwj6O9UWzu46hUbqHL-bsAe44E-XuWYZrCw4wt9Zi1-LVnR~L2J3~-4YgJiagWolIMWF0qoGYd-tuz9DtJTYSnVj78sV9bDfC5C20aYS98nsYenGWCTvz9pZgkyycImSraQy4nA47glUJS4Q5e~Mt~oj8WRUWTGsMJXi1DWKvdu~y6HobkZu7YDHIaoz4CMTbW7UBK8EQKKnoWX3S6DPdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="profile">
                     <h2>Bessie Cooper</h2>
                     <span>Web Designer</span>
                     <p>
                         Minim dolor in amet nulla laboris enim dolore.
                     </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- ========== End Hero ========== -->
+
+    <!-- ========== Start Text ========== -->
+    <section id="text-section" class="text-section">
+        <div class="container">
+            <h2>Responsive design<br>for mobile</h2>
+        </div>
+    </section>
+    <!-- ========== End Text ========== -->
+
+    <!-- ========== Start About ========== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="phone-case">
+                <div class="status">
+                    <span>4:20</span>
+                    <div class="status-icons">
+                        <i class="ri-numbers-fill"></i>
+                        <i class="ri-wifi-fill"></i>
+                        <i class="ri-battery-fill"></i>
+                    </div>
+                </div>
+
+                <div class="phone-content">
+                    <h2 class="phone-title">Hello, this<br>is great</h2>
+
+                    <div class="phone-card">
+                        <div class="profile">
+                            <img src="https://s3-alpha-sig.figma.com/img/7e9c/7926/bbc15f57dadcb95b3e7268aac00e6642?Expires=1691971200&Signature=hjwl0rOHFPDU2MUH9LIRnA9SrCzLA6QmHm4V-v8IGf1FaC8~poEENn~gfWBhnWRzp6lDWK0HZ-xkHOsi806zuCs0CHTyHonoOE2-k3r9k2p~OCTZwRkBSUNaq7PFd7lLTuOkL1BvLAUTYdMYhKARKV7yabJzHaED38zIAKgwqwHF4xC2TlCuZiAZUq835OuVwN9XNur-RB8z9nRB24eBFp2~8m2bDHCvom7hwDuk75ApQss0j3zpGyuwDv~YoasyPCT11JEfWrkHxWIq5YL2rtdFoDNEl1CKQokUI9XoN-hGYqdweuICIhQ9IFbztkNMIYrRCRTq5bMAf54Bspev3Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="profile pic">
+                            <div class="profile-title">
+                                <h5>Jane Cooper</h5>
+                                <small>Marketing Coordinator</small>
+                            </div>
+                        </div>
+                        <h3>Web Design templates<br>Selection</h3>
+                        <small>3 September 2019</small>
+                    </div>
+
+                    <div class="phone-card">
+                        <div class="profile">
+                            <img src="https://s3-alpha-sig.figma.com/img/f976/523e/6244104707fcd76a9a6d1e9acc2507b0?Expires=1691971200&Signature=naqA9oSOzbPqqTZ~0zq5rX6FEbbgB1eZ3yg~KyO6oSQlONwinx2-CCvripfJe4RurWONSfSAfZfnpRZ0s0mh6I2ua4lx5DOU2-XkC4hO8yTMmOnW3ecZonzNisPxUMleK~~QV88~gsbu8XUGRSfnRdN98jFwt8RjIXl27D1O7d731wYaZkpKDjKoGm5yqD5ooExsgDL~V~4IczFMRolrOaMBrwU~UX6KUvGpZmsfC-~PIerDq8FZQdyIqWFU9wpkcOGRtViDVjJUASilnl8as1SixSyZa1YQ-CL-kMYwgAjCyGtbX4wgjR4B0qa899UJKID-LnKITUlfPfBEI99t1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="Profile2">
+                            <h5>Jane Cooper</h5>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.75992 22H17.2399C19.9999 22 21.0999 20.31 21.2299 18.25L21.7499 9.99C21.8899 7.83 20.1699 6 17.9999 6C17.3899 6 16.8299 5.65 16.5499 5.11L15.8299 3.66C15.3699 2.75 14.1699 2 13.1499 2H10.8599C9.82992 2 8.62992 2.75 8.16992 3.66L7.44992 5.11C7.16992 5.65 6.60992 6 5.99992 6C3.82992 6 2.10992 7.83 2.24992 9.99L2.76992 18.25C2.88992 20.31 3.99992 22 6.75992 22Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 8H13.5" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="bottom-bezzle"></div>
+            </div>
+
+            <div class="about-text">
+                <div class="line">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="67" height="143" viewBox="0 0 67 143" fill="none">
+                        <path
+                            d="M62.6342 4.24453C28.3963 9.80443 -13.076 44.8485 16.2628 71.3794C75.8948 125.304 75.0402 9.41058 18.7161 73.1653C8.99792 84.1656 4.27181 133.175 3.54507 139.334"
+                            stroke="#B75D69" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="text-bloc">
+                    <h3 class="about-title">Why choose us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas amet felis fermentum pharetra.
+                        Ut neque quam ipsum porttitor nunc, lectus vel diam tincidunt. Est vulputate sed justo.
+                    </p>
+                </div>
+
+                <div class="text-bloc">
+                    <h3 class="about-title">Advantage</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas amet felis fermentum pharetra.
+                        Ut neque quam ipsum porttitor nunc, lectus vel diam tincidunt. Est vulputate sed justo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End About ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <footer>
+        <div class="footer-top">
+            <h4 class="footer-title">Designed by <a href="">Frank Esteban</a> and Dev by <a href="">Joel Fah</a></h4>
+            <small>
+                Contact me on the different platforms and social networks
+            </small>
+        </div>
+        <div class="footer-socials">
+            <a href="">
+                <i class="ri-codepen-line"></i>
+            </a>
+            <a href="">
+                <i class="ri-dribbble-line"></i>
+            </a>
+            <a href="">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="">
+                <i class="ri-twitter-fill"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
 </body>
 
 </html>
