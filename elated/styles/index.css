@@ -395,7 +395,7 @@ footer .footer-socials .social-links .link:hover {
     max-height: 200px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px){
     #join {
         height: 98vh;
     }
