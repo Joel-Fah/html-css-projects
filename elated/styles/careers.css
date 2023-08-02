@@ -1,0 +1,71 @@
+/* Variables */
+:root {
+    /* Colors */
+    --primary: #692D91;
+    --secondary: #B267D6;
+    --bg-section: #FDFAFF;
+    --border-color: #CEC4D4;
+    --dark: #535353;
+    --light: #FDFAFF;
+    --gradient: linear-gradient(224deg, #B267D6 0%, #692D91 100%);
+
+
+    /* Font */
+    --heading-font: 'Ubuntu', sans-serif;
+    --text-font: 'PT Sans', sans-serif;
+
+    /* Other */
+    --transition: all 300ms ease-in-out;
+    --shadow: 5px 5px 10px #53535350;
+}
+
+/* Hero Career */
+/* Hero */
+#hero-career {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.35)), url(https://s3-alpha-sig.figma.com/img/2d48/1a30/d191a46b7ef4248ea97f3c495e371fc9?Expires=1691971200&Signature=dDnteelFuxCvbLewmc3AXGeV8oc9bRaa95XpMoV8P6SMKmIMFCxUGTW9Bh~YRoS2SPufm03lUxVgAYtQgKrvvbEoqiTzURPw3XBqsUQTbpZ7sj~4btPjT25pSlE80vHwbO-cBQN6RiVdHYHOZ5F649cmYvCIpSQqzf4DLg~3GUeeanPFCn~7H58NHa9Nx3Zfu2GP-P8PxfObhu8Ue6QYLwp7XSEshkUxd2am8cXv9lLwwtLS62guNQoEAzFqGtRFASHg0LyGqLWw~26Ewib2jetYZWJmDtTkOkEqB0PFn~nnFqIj01kS3xjAUu0EXKXkZe0EGhDgtCiQbgR-b-dYpw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-career .hero-content {
+    text-align: center;
+}
+
+.hero-career .hero-content h1 {
+    text-transform: uppercase;
+    color: #DBA6F4;
+    margin-bottom: 20px;
+}
+
+.hero-career .hero-content p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--light);
+}
+
+/* Careers */
+#careers p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.careers .career-jobs {
+
+}
+
+.careers .career-jobs .header {}
+
+.careers .career-jobs .header h2 span {
+    color: var(--primary);
+    text-decoration: underline dotted;
+}
