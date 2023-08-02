@@ -394,3 +394,13 @@ footer .footer-socials .social-links .link:hover {
     height: 4em;
     max-height: 200px;
 }
+
+@media screen and (min-width: 1024px) {
+    #join {
+        height: 98vh;
+    }
+
+    .find-us .write-us {
+        bottom: -40%;
+    }
+}

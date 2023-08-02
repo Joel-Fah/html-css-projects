@@ -235,3 +235,9 @@ footer small {
     color: var(--light);
     text-align: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .empty-space-xl {
+        height: 65vh;
+    }
+}
