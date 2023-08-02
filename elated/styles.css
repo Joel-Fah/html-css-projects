@@ -115,7 +115,7 @@ header {
     justify-content: flex-end;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 10;
 }
 
 .navbar {
@@ -215,6 +215,16 @@ footer .footer-socials .social-links .link:hover {
 
 footer p {
     font-size: 14px;
+}
+
+footer p a {
+    color: var(--secondary);
+    transition: var(--transition);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: var(--primary);
 }
 
 footer small {

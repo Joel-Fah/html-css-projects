@@ -160,3 +160,122 @@
     border: none;
     width: 100%;
 }
+
+/* Modal */
+#target-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: var(--transition);
+    z-index: 20;
+}
+
+#target-content:target {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#target-content #target-inner {
+    position: absolute;
+    display: block;
+    padding: 48px;
+    line-height: 1.8;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 15px 30px 50px 0px rgba(0, 0, 0, 0.10);
+    background: var(--light);
+    color: var(--dark);
+    max-height: calc(100vh - 100px);
+    max-width: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#target-content #target-inner .title {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+}
+
+#target-content #target-inner h3 {
+    font-weight: 700;
+}
+
+#target-content #target-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#target-content #target-inner .modal-item p {
+    line-height: 25px;
+}
+
+#target-content #target-inner .modal-list-item {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+#target-content #target-inner .modal-list-item i {
+    font-size: x-large;
+}
+
+#target-content #target-inner .modal-item a.btn {
+    padding: 15px 30px;
+    font-size: initial;
+}
+
+#target-content #target-inner .modal-item:last-child {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#target-content #target-inner .modal-item:last-child a.btn-sec {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#target-content a.close {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #34495E;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+#target-content a.close:hover {
+    opacity: 0.5;
+}
+
+#target-content #target-inner a.modal-close {
+    font-size: xx-large;
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: inherit;
+    top: 30px;
+    right: 30px;
+}
+
+#target-content #target-inner a.modal-close:hover {
+    color: var(--secondary);
+}
